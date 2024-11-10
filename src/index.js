@@ -1,6 +1,7 @@
 import React from 'react';
 // import { Render } from 'react-dom';
 import ReactDOM from 'react-dom';
+import './style.css';
 
 const Greeting = () => <h1>Hello from React</h1>;
 
