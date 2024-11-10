@@ -15,7 +15,7 @@
   \**********************/
 /***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
 
-eval("const $ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n$('#target').html('hello everyone!');\n\n//# sourceURL=webpack://webpack-basic/./src/index.js?");
+eval("var $ = __webpack_require__(/*! jquery */ \"./node_modules/jquery/dist/jquery.js\");\n$('#target').html('hello everyone!');\n\n//# sourceURL=webpack://webpack-basic/./src/index.js?");
 
 /***/ }),
 
