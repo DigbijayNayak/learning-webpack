@@ -1,20 +1,24 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'development',
-  entry: {
-    about: './src/about.js',
-    contact: './src/contact.js',
-  },
+  // entry: {
+  //   about: './src/about.js',
+  //   contact: './src/contact.js',
+  // },
+  entry: './src/index.js',
   output: {
-    filename: '[name].bundle.js',
+    // filename: '[name].bundle.js',
+    filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
   },
-  optimization: {
-    splitChunks: {
-      chunks: 'all',
-    },
-  },
+  // optimization: {
+  //   splitChunks: {
+  //     chunks: 'all',
+  //   },
+  // },
+  plugins: [new HtmlWebpackPlugin()],
   devServer: {
     static: {
       directory: path.join(__dirname, 'dist'),
